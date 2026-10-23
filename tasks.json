@@ -1,0 +1,795 @@
+[
+  {
+    "grade": 3,
+    "id": "3-SPACE",
+    "name": "Thiếu dấu cách",
+    "prompt": "Gõ lại câu, chú ý khoảng trắng:",
+    "choices": []
+  },
+  {
+    "grade": 3,
+    "id": "3-CAPS",
+    "name": "Quên chữ hoa",
+    "prompt": "Gõ lại câu, chú ý chữ đầu câu:",
+    "choices": []
+  },
+  {
+    "grade": 3,
+    "id": "3-MOUSE1",
+    "name": "Nháy đơn và nháy đúp",
+    "prompt": "Để mở một thư mục trên màn hình, em thường làm gì?",
+    "choices": [
+      "Nháy đơn",
+      "Nháy đúp",
+      "Lăn chuột"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-MOUSE2",
+    "name": "Nháy chuột phải",
+    "prompt": "Muốn mở bảng lệnh nhanh của một tệp, em dùng thao tác nào?",
+    "choices": [
+      "Nháy chuột phải",
+      "Nháy đúp trái",
+      "Lăn chuột"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-MOUSE3",
+    "name": "Con trỏ chuột",
+    "prompt": "Muốn chọn biểu tượng, trước tiên cần làm gì?",
+    "choices": [
+      "Tắt màn hình",
+      "Di chuyển con trỏ tới biểu tượng",
+      "Nhấn Enter liên tục"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-KEY1",
+    "name": "Nhầm phím Enter",
+    "prompt": "Muốn xuống dòng mới khi gõ văn bản, em nhấn phím nào?",
+    "choices": [
+      "Space",
+      "Enter",
+      "Backspace"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-KEY2",
+    "name": "Nhầm phím Backspace",
+    "prompt": "Muốn xóa kí tự ngay bên trái con trỏ, em nhấn gì?",
+    "choices": [
+      "Shift",
+      "Backspace",
+      "Tab"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-KEY3",
+    "name": "Nhầm phím Space",
+    "prompt": "Muốn tạo khoảng cách giữa hai từ, em nhấn phím nào?",
+    "choices": [
+      "Enter",
+      "Space",
+      "Caps Lock"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-KEY4",
+    "name": "Gõ sai dấu câu",
+    "prompt": "Gõ lại câu sau, chú ý dấu chấm:",
+    "choices": []
+  },
+  {
+    "grade": 3,
+    "id": "3-KEY5",
+    "name": "Gõ thiếu từ",
+    "prompt": "Gõ đủ các từ trong câu:",
+    "choices": []
+  },
+  {
+    "grade": 3,
+    "id": "3-KEY6",
+    "name": "Gõ thừa khoảng trắng",
+    "prompt": "Gõ câu với đúng một dấu cách giữa các từ:",
+    "choices": []
+  },
+  {
+    "grade": 3,
+    "id": "3-FILE1",
+    "name": "Nhầm tệp với thư mục",
+    "prompt": "Đối tượng nào dùng để chứa các tệp?",
+    "choices": [
+      "Thư mục",
+      "Con trỏ",
+      "Phím cách"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-FILE2",
+    "name": "Nhận biết tệp ảnh",
+    "prompt": "Tệp nào thường là tệp hình ảnh?",
+    "choices": [
+      "hoa.png",
+      "baihat.mp3",
+      "ghichu.txt"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-FILE3",
+    "name": "Đặt tên thư mục",
+    "prompt": "Tên nào dễ hiểu nhất để lưu bài Tin học?",
+    "choices": [
+      "abc123",
+      "BaiTinHoc",
+      "Moi"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-INFO1",
+    "name": "Thông tin bằng hình ảnh",
+    "prompt": "Biển báo giao thông truyền đạt thông tin chủ yếu bằng gì?",
+    "choices": [
+      "Hình ảnh",
+      "Mùi hương",
+      "Nhiệt độ"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-INFO2",
+    "name": "Thông tin bằng âm thanh",
+    "prompt": "Tiếng trống trường là thông tin dạng nào?",
+    "choices": [
+      "Văn bản",
+      "Âm thanh",
+      "Hình ảnh"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-INFO3",
+    "name": "Thông tin và quyết định",
+    "prompt": "Trời mưa, em nên quyết định làm gì khi ra ngoài?",
+    "choices": [
+      "Mang áo mưa",
+      "Đội mũ giấy",
+      "Để sách ngoài sân"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-SAFE1",
+    "name": "Ngồi đúng tư thế",
+    "prompt": "Khi dùng máy tính, cách ngồi nào phù hợp?",
+    "choices": [
+      "Cúi sát màn hình",
+      "Ngồi thẳng, mắt cách màn hình hợp lý",
+      "Nằm gõ bàn phím"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-SAFE2",
+    "name": "Tay ướt chạm điện",
+    "prompt": "Khi tay ướt, em có nên cắm dây điện máy tính không?",
+    "choices": [
+      "Có",
+      "Không",
+      "Tùy thích"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-SAFE3",
+    "name": "Chia sẻ mật khẩu",
+    "prompt": "Bạn hỏi mật khẩu tài khoản học tập, em nên làm gì?",
+    "choices": [
+      "Đọc cho bạn",
+      "Đăng lên nhóm",
+      "Không chia sẻ mật khẩu"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-DESK1",
+    "name": "Nhầm biểu tượng",
+    "prompt": "Biểu tượng thùng rác thường dùng để làm gì?",
+    "choices": [
+      "Mở trò chơi",
+      "Chứa tệp đã xóa",
+      "Tăng âm lượng"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-DESK2",
+    "name": "Mở chương trình",
+    "prompt": "Muốn mở chương trình từ biểu tượng trên màn hình, em thường?",
+    "choices": [
+      "Nháy đúp biểu tượng",
+      "Rút dây điện",
+      "Gõ ngẫu nhiên"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-WEB1",
+    "name": "Chọn thông tin phù hợp",
+    "prompt": "Khi tìm tài liệu học, nguồn nào nên ưu tiên?",
+    "choices": [
+      "Trang không rõ nguồn",
+      "Trang học tập do giáo viên giới thiệu",
+      "Tin nhắn lạ"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-WEB2",
+    "name": "Gặp nội dung lạ",
+    "prompt": "Thấy trang web khiến em lo lắng, em nên?",
+    "choices": [
+      "Tiếp tục xem",
+      "Báo người lớn hoặc giáo viên",
+      "Chia sẻ ngay"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SAVE1",
+    "name": "Lưu sai thư mục",
+    "prompt": "Em cần lưu bài vào thư mục nào nếu giáo viên yêu cầu thư mục HocTap?",
+    "choices": [
+      "HinhAnh",
+      "HocTap",
+      "TaiVe"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SAVE2",
+    "name": "Quên đặt tên tệp",
+    "prompt": "Tên tệp nào giúp tìm lại bài trình chiếu về cây xanh?",
+    "choices": [
+      "Moi1.pptx",
+      "CayXanh.pptx",
+      "abc.pptx"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SAVE3",
+    "name": "Nhầm lưu và mở",
+    "prompt": "Đã sửa nội dung tệp, muốn giữ thay đổi em chọn gì?",
+    "choices": [
+      "Mở",
+      "Lưu",
+      "Đóng không lưu"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SAVE4",
+    "name": "Sao chép và di chuyển",
+    "prompt": "Muốn giữ tệp gốc và có thêm bản ở thư mục khác, em chọn?",
+    "choices": [
+      "Di chuyển",
+      "Xóa",
+      "Sao chép"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SAVE5",
+    "name": "Xóa nhầm tệp",
+    "prompt": "Vừa xóa nhầm tệp và tệp còn trong thùng rác, em nên?",
+    "choices": [
+      "Xóa vĩnh viễn",
+      "Khôi phục",
+      "Đổi hình nền"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-WORD1",
+    "name": "Quên chữ đậm",
+    "prompt": "Muốn làm nổi bật tiêu đề, em chọn kiểu chữ nào?",
+    "choices": [
+      "Đậm",
+      "Gạch ngang",
+      "Ẩn"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-WORD2",
+    "name": "Nhầm căn giữa",
+    "prompt": "Tiêu đề cần nằm giữa dòng, em chọn cách căn nào?",
+    "choices": [
+      "Căn trái",
+      "Căn giữa",
+      "Căn phải"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-WORD3",
+    "name": "Chọn chữ trước định dạng",
+    "prompt": "Trước khi đổi màu một từ đã gõ, em cần làm gì?",
+    "choices": [
+      "Xóa tệp",
+      "Chọn từ đó",
+      "Tắt máy"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-WORD4",
+    "name": "Gõ sai chữ hoa",
+    "prompt": "Gõ đúng tên riêng sau:",
+    "choices": []
+  },
+  {
+    "grade": 4,
+    "id": "4-WORD5",
+    "name": "Quên dấu câu",
+    "prompt": "Gõ lại câu với dấu chấm cuối câu:",
+    "choices": []
+  },
+  {
+    "grade": 4,
+    "id": "4-SLIDE1",
+    "name": "Thiếu tiêu đề trang chiếu",
+    "prompt": "Trang chiếu mở đầu nên có nội dung nào?",
+    "choices": [
+      "Tên bài trình bày",
+      "Chỉ hình nền",
+      "Để trống"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SLIDE2",
+    "name": "Chữ quá nhỏ",
+    "prompt": "Trang chiếu có chữ quá nhỏ, em nên?",
+    "choices": [
+      "Giảm cỡ chữ",
+      "Tăng cỡ chữ",
+      "Ẩn chữ"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SLIDE3",
+    "name": "Màu chữ khó đọc",
+    "prompt": "Chữ trắng trên nền trắng khó đọc, em nên?",
+    "choices": [
+      "Giữ nguyên",
+      "Đổi sang màu chữ tương phản",
+      "Xóa tiêu đề"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SLIDE4",
+    "name": "Quá nhiều chữ",
+    "prompt": "Một trang chiếu có quá nhiều chữ, em nên?",
+    "choices": [
+      "Thêm nhiều chữ",
+      "Rút gọn thành ý chính",
+      "Giảm chữ xuống thật nhỏ"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SLIDE5",
+    "name": "Thiếu hình minh họa",
+    "prompt": "Muốn minh họa bài giới thiệu cây, nên chèn gì?",
+    "choices": [
+      "Ảnh cây phù hợp",
+      "Ảnh xe đua",
+      "Không liên quan"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SCR1",
+    "name": "Thiếu khối bắt đầu",
+    "prompt": "Trong Scratch, muốn chương trình chạy khi nhấn cờ xanh, dùng khối nào?",
+    "choices": [
+      "Khi bấm cờ xanh",
+      "Đợi 10 giây",
+      "Dừng tất cả"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SCR2",
+    "name": "Nhầm lệnh di chuyển",
+    "prompt": "Muốn nhân vật đi 10 bước, em chọn khối nào?",
+    "choices": [
+      "Nói Xin chào",
+      "Di chuyển 10 bước",
+      "Đổi màu"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SCR3",
+    "name": "Nhầm lệnh nói",
+    "prompt": "Muốn nhân vật hiện lời chào, dùng khối nào?",
+    "choices": [
+      "Nói Xin chào",
+      "Di chuyển 10 bước",
+      "Xoay 15 độ"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SCR4",
+    "name": "Sai thứ tự khối",
+    "prompt": "Nhân vật phải bắt đầu rồi mới di chuyển, thứ tự nào đúng?",
+    "choices": [
+      "Di chuyển → Bắt đầu",
+      "Bắt đầu → Di chuyển",
+      "Dừng → Bắt đầu"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-SCR5",
+    "name": "Quên ghép khối",
+    "prompt": "Các khối lệnh cần được đặt thế nào để chạy nối tiếp?",
+    "choices": [
+      "Để rời nhau",
+      "Ghép liền nhau",
+      "Ẩn hết"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-NET1",
+    "name": "Nhấn liên kết lạ",
+    "prompt": "Nhận liên kết từ người không quen, em nên?",
+    "choices": [
+      "Bấm ngay",
+      "Hỏi giáo viên hoặc người lớn",
+      "Gửi cho mọi bạn"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-NET2",
+    "name": "Chia sẻ ảnh bạn",
+    "prompt": "Muốn đăng ảnh của bạn lên mạng, em cần?",
+    "choices": [
+      "Đăng ngay",
+      "Xin phép bạn và người lớn phù hợp",
+      "Gắn tên bạn"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-NET3",
+    "name": "Tìm từ khóa dài",
+    "prompt": "Muốn tìm ảnh hoa sen, từ khóa nào phù hợp?",
+    "choices": [
+      "ảnh",
+      "hình ảnh hoa sen",
+      "tất cả"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-NET4",
+    "name": "Sử dụng nguồn tin",
+    "prompt": "Đọc tin trên mạng chưa rõ đúng sai, em nên?",
+    "choices": [
+      "Tin ngay",
+      "Chia sẻ ngay",
+      "Kiểm tra nguồn và hỏi giáo viên"
+    ]
+  },
+  {
+    "grade": 4,
+    "id": "4-NET5",
+    "name": "Bảo vệ thông tin",
+    "prompt": "Thông tin nào không nên công khai trên mạng?",
+    "choices": [
+      "Tên môn học",
+      "Mật khẩu cá nhân",
+      "Tên loài cây"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-LOOP1",
+    "name": "Chọn sai số lần lặp",
+    "prompt": "Muốn nhân vật thực hiện hành động 4 lần, chọn?",
+    "choices": [
+      "Lặp 2 lần",
+      "Lặp 4 lần",
+      "Lặp 8 lần"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-LOOP2",
+    "name": "Nhầm lặp vô hạn",
+    "prompt": "Muốn nhân vật lặp liên tục đến khi dừng, chọn khối nào?",
+    "choices": [
+      "Lặp 3 lần",
+      "Mãi mãi",
+      "Đợi 1 giây"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-LOOP3",
+    "name": "Đặt lệnh sai trong lặp",
+    "prompt": "Muốn di chuyển 3 lần, lệnh Di chuyển nên đặt ở đâu?",
+    "choices": [
+      "Bên ngoài khối lặp",
+      "Bên trong khối lặp 3 lần",
+      "Sau khối dừng"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-LOOP4",
+    "name": "Sai số bước",
+    "prompt": "Muốn nhân vật đi 20 bước, em đặt giá trị nào?",
+    "choices": [
+      "2",
+      "20",
+      "200"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-LOOP5",
+    "name": "Sai góc quay",
+    "prompt": "Muốn nhân vật quay góc vuông, em đặt bao nhiêu độ?",
+    "choices": [
+      "45",
+      "90",
+      "180"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-ORDER1",
+    "name": "Sai thứ tự điều khiển",
+    "prompt": "Chọn thứ tự hợp lý để bắt đầu, di chuyển rồi xoay:",
+    "choices": [
+      "Xoay → Bắt đầu → Di chuyển",
+      "Bắt đầu → Di chuyển → Xoay",
+      "Di chuyển → Xoay → Bắt đầu"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-ORDER2",
+    "name": "Quên lệnh chờ",
+    "prompt": "Muốn nhân vật dừng 1 giây trước khi nói, đặt lệnh nào?",
+    "choices": [
+      "Di chuyển 10 bước",
+      "Đợi 1 giây",
+      "Xóa tất cả"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-ORDER3",
+    "name": "Nhầm điều kiện",
+    "prompt": "Muốn nhân vật nói khi chạm cạnh, cần kiểm tra gì?",
+    "choices": [
+      "Tên nhân vật",
+      "Có chạm cạnh không?",
+      "Màu nền"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-ORDER4",
+    "name": "Nhầm khối nếu",
+    "prompt": "Muốn chỉ nói khi chạm cạnh, dùng cấu trúc nào?",
+    "choices": [
+      "Lặp mãi mãi không điều kiện",
+      "Nếu ... thì",
+      "Dừng tất cả"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-ORDER5",
+    "name": "Nhầm phép so sánh",
+    "prompt": "Muốn kiểm tra điểm lớn hơn 5, chọn phép so sánh nào?",
+    "choices": [
+      "điểm < 5",
+      "điểm > 5",
+      "điểm = 0"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-DOC1",
+    "name": "Quên chọn đoạn",
+    "prompt": "Trước khi căn giữa một đoạn đã gõ, cần làm gì?",
+    "choices": [
+      "Đóng tệp",
+      "Chọn đoạn văn",
+      "Xóa đoạn"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-DOC2",
+    "name": "Sai căn lề",
+    "prompt": "Muốn hai mép đoạn văn thẳng đều, dùng cách căn nào?",
+    "choices": [
+      "Căn trái",
+      "Căn phải",
+      "Căn đều hai bên"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-DOC3",
+    "name": "Sai cỡ chữ",
+    "prompt": "Muốn chữ dễ đọc hơn khi quá nhỏ, em nên?",
+    "choices": [
+      "Tăng cỡ chữ",
+      "Giảm cỡ chữ",
+      "Đổi tên tệp"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-DOC4",
+    "name": "Quên lưu thay đổi",
+    "prompt": "Sau khi sửa tài liệu, muốn giữ nội dung mới, em cần?",
+    "choices": [
+      "Lưu tệp",
+      "Đóng không lưu",
+      "Đổi hình nền"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-DOC5",
+    "name": "Gõ sai tên bài",
+    "prompt": "Gõ đúng tiêu đề sau:",
+    "choices": []
+  },
+  {
+    "grade": 5,
+    "id": "5-SLIDE1",
+    "name": "Trình chiếu thiếu thứ tự",
+    "prompt": "Bài trình chiếu nên sắp xếp như thế nào?",
+    "choices": [
+      "Kết luận → Mở đầu → Nội dung",
+      "Mở đầu → Nội dung → Kết luận",
+      "Nội dung → Kết luận → Mở đầu"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-SLIDE2",
+    "name": "Hiệu ứng quá nhiều",
+    "prompt": "Dùng quá nhiều hiệu ứng gây rối mắt, em nên?",
+    "choices": [
+      "Thêm hiệu ứng",
+      "Giảm hiệu ứng không cần thiết",
+      "Ẩn nội dung"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-SLIDE3",
+    "name": "Nguồn ảnh không rõ",
+    "prompt": "Dùng ảnh tìm trên mạng cho bài học, em nên?",
+    "choices": [
+      "Dùng tùy ý",
+      "Kiểm tra quyền sử dụng và ghi nguồn",
+      "Xóa tên tác giả"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-SLIDE4",
+    "name": "Lỗi chính tả",
+    "prompt": "Trước khi trình bày, em cần làm gì?",
+    "choices": [
+      "Đọc và sửa lỗi chính tả",
+      "Tắt máy",
+      "Đổi tên tất cả tệp"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-SLIDE5",
+    "name": "Nền và chữ khó đọc",
+    "prompt": "Nền xanh đậm nên chọn màu chữ nào dễ đọc?",
+    "choices": [
+      "Xanh đậm",
+      "Trắng",
+      "Đen rất tối"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-WEB1",
+    "name": "Từ khóa chưa chính xác",
+    "prompt": "Tìm cách chăm sóc cây hoa hồng, chọn từ khóa nào?",
+    "choices": [
+      "cây",
+      "cách chăm sóc hoa hồng",
+      "đẹp"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-WEB2",
+    "name": "Nhầm quảng cáo",
+    "prompt": "Kết quả tìm kiếm ghi Quảng cáo, em nên?",
+    "choices": [
+      "Tin ngay là tốt nhất",
+      "Nhận biết đó là nội dung quảng cáo",
+      "Chia sẻ ngay"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-WEB3",
+    "name": "Chia sẻ dữ liệu cá nhân",
+    "prompt": "Trang lạ yêu cầu địa chỉ nhà để tải bài, em nên?",
+    "choices": [
+      "Nhập ngay",
+      "Không cung cấp và báo người lớn",
+      "Gửi cho bạn"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-WEB4",
+    "name": "Kiểm chứng thông tin",
+    "prompt": "Hai trang đưa thông tin trái nhau, em nên?",
+    "choices": [
+      "Chọn trang có màu đẹp",
+      "Đối chiếu nguồn đáng tin và hỏi giáo viên",
+      "Tin trang đầu tiên"
+    ]
+  },
+  {
+    "grade": 5,
+    "id": "5-WEB5",
+    "name": "Sử dụng tài liệu có nguồn",
+    "prompt": "Khi trích một hình trong bài trình bày, em nên?",
+    "choices": [
+      "Xóa nguồn",
+      "Ghi nguồn và tuân thủ quyền sử dụng",
+      "Nhận là ảnh mình chụp"
+    ]
+  },
+  {
+    "grade": 3,
+    "id": "3-SAFE4",
+    "name": "Nghỉ mắt khi dùng máy tính",
+    "prompt": "Sau khi nhìn màn hình lâu, em nên làm gì?",
+    "choices": [
+      "Nhìn sát màn hình hơn",
+      "Nghỉ mắt và nhìn ra xa",
+      "Tiếp tục không nghỉ"
+    ]
+  }
+]
