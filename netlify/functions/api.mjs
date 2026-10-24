@@ -26,7 +26,7 @@ const typed={'3-SPACE':'Em yêu Tin học','3-CAPS':'Em yêu Tin học','3-KEY4'
 const norm=v=>String(v||'').trim().normalize('NFC').replace(/\s+/g,' ');
 const gradeOf=code=>Number(code[0]);
 function adviceFor(task,passed){return passed?`Tốt lắm! Em đã xử lý được lỗi “${task.name}”. Hãy thử làm lại để nhớ lâu.`:`Em hãy đọc kỹ yêu cầu “${task.prompt}”, quan sát kết quả rồi thử lại. Nếu còn khó, hãy hỏi giáo viên.`}
-async function gemini(prompt){const key=process.env.GEMINI_API_KEY;if(!key)return null;const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),12000);try{const model=process.env.GEMINI_MODEL||'gemini-2.5-flash';const res=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,{method:'POST',headers:{'Content-Type':'application/json','x-goog-api-key':key},body:JSON.stringify({contents:[{parts:[{text:prompt}]}],generationConfig:{maxOutputTokens:350,temperature:0.4}}),signal:controller.signal});if(!res.ok)return null;const data=await res.json();return data.candidates?.[0]?.content?.parts?.map(x=>x.text||'').join('').slice(0,1800)||null}catch{return null}finally{clearTimeout(timeout)}}
+async function gemini(prompt,max=350){const key=process.env.GEMINI_API_KEY;if(!key)return null;const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),12000);try{const model=process.env.GEMINI_MODEL||'gemini-2.5-flash';const res=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,{method:'POST',headers:{'Content-Type':'application/json','x-goog-api-key':key},body:JSON.stringify({contents:[{parts:[{text:prompt}]}],generationConfig:{maxOutputTokens:max,temperature:0.4}}),signal:controller.signal});if(!res.ok)return null;const data=await res.json();return data.candidates?.[0]?.content?.parts?.map(x=>x.text||'').join('').slice(0,1800)||null}catch{return null}finally{clearTimeout(timeout)}}
 export default async function handler(req){
  if(req.method!=='POST')return fail('Chỉ hỗ trợ POST',405);
  if(!secret()||!teacherPassword())return fail('Chưa cấu hình APP_SECRET và TEACHER_PASSWORD trong Netlify.',503);
@@ -71,6 +71,7 @@ export default async function handler(req){
  const ev=typeof p.eventId==='string'&&/^event-[0-9]+-[a-f0-9]+$/.test(p.eventId)?await st.get(p.eventId,{type:'json'}):null;if(!ev||ev.code!==auth.code)return fail('Không tìm thấy lượt thực hành',404);
  const task=tasks.find(t=>t.id===ev.taskId),fallback=adviceFor(task,ev.passed);
  const result=await gemini(`Bạn là giáo viên Tin học tiểu học Việt Nam. Chỉ dùng tiếng Việt, tối đa 90 từ, động viên học sinh, gợi ý cách tự sửa mà không tiết lộ thông tin cá nhân. Lớp ${task.grade}. Ca bệnh: ${task.name}. Yêu cầu: ${task.prompt}. Kết quả: ${ev.passed?'đạt':'chưa đạt'}. Hãy đưa 2-3 bước cụ thể.`);
+ if(result){try{await st.setJSON(ev.id||p.eventId,{...ev,aiUsed:true,aiAt:new Date().toISOString()})}catch(e){console.error('Không ghi được dấu AI',e)}}
  return json(result?{advice:result}:{fallback,reason:'Gemini chưa được cấu hình hoặc tạm thời không phản hồi.'});
  }
  if(auth.role!=='teacher')return fail('Chỉ giáo viên được thực hiện chức năng này.',403);
@@ -87,7 +88,7 @@ export default async function handler(req){
  const events=(await all('event-')).sort((a,b)=>a.time.localeCompare(b.time)),latest=new Map();for(const e of events)latest.set(`${e.code}|${e.taskId}`,e);const count={};for(const e of latest.values())if(!e.passed)count[e.taskId]=(count[e.taskId]||0)+1;
  const top=Object.entries(count).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([id,n])=>`${tasks.find(t=>t.id===id)?.name||id}: ${n} học sinh`).join('; ');
  const fallback=top?`Nên tổ chức ôn tập theo nhóm nhỏ cho các lỗi: ${top}. Cho học sinh làm lại, sau đó đối chiếu kết quả lần đầu và lần cuối.`:'Chưa có lỗi chưa đạt. Hãy giao bài phù hợp rồi xem tiến bộ sau khi học sinh thực hành.';
- const result=top?await gemini(`Bạn là giáo viên Tin học tiểu học. Viết tối đa 140 từ tiếng Việt, đề xuất 3 hoạt động ôn tập ngắn dựa trên các lỗi: ${top}. Không đưa thông tin cá nhân.`):null;
+ const result=top?await gemini(`Bạn là trợ lý chuyên môn cho giáo viên Tin học tiểu học. Các lỗi chưa đạt ở lượt gần nhất: ${top}. Viết tối đa 180 từ tiếng Việt, đúng 3 mục có đánh số: 1) Lỗi nên ưu tiên và nguyên nhân có thể; 2) Một hoạt động ôn tập 10 phút; 3) Cách kiểm tra lại sau ôn tập. Không đưa thông tin cá nhân. Đây chỉ là gợi ý, giáo viên là người quyết định.`,700):null;
  return json(result?{advice:result}:{fallback});
  }
  return fail('Chức năng không tồn tại',404);
